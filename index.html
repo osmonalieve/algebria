@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгебра Чечүү</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Алгебра Чечүү Сайты</h1>
+    </header>
+    <main>
+        <section class="input-section">
+            <h2>Тексттик Маселе Киргизүү</h2>
+            <form id="text-form">
+                <textarea placeholder="Маселени бул жакка жазыңыз..."></textarea>
+                <button type="submit">Чечүү</button>
+            </form>
+        </section>
+        <form id="image-form">
+            <label for="file-input">Сүрөт жүктөө:</label>
+            <input type="file" id="file-input" accept="image/*">
+            <button type="submit">Чечүү</button>
+        </form>
+        <div id="output"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.0.2/tesseract.min.js"></script>
+    <script src="algebria.js" defer></script>
+</body>
+</html>
